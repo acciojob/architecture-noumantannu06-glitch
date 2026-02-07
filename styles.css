@@ -1,1 +1,168 @@
 /*  your css code here. If applicable */
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 25px;
+            min-height: 100vh;
+        }
+        
+        .main-wrapper {
+            width: 1100px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 30px;
+            box-shadow: 0 35px 70px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            color: white;
+            padding: 70px 60px;
+            text-align: center;
+            position: relative;
+        }
+        
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #ffecd2 0%, #fcb69f 100%);
+        }
+        
+        header h1 {
+            font-size: 3.2em;
+            margin-bottom: 15px;
+            font-weight: 300;
+            letter-spacing: 3px;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        
+        .imageContainer {
+            width: 1100px;
+            height: 420px;
+            overflow: hidden;
+            position: relative;
+            display: block;
+        }
+        
+        .imageContainer img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .imageContainer:hover img {
+            transform: scale(1.05);
+        }
+        
+        .main-content {
+            padding: 70px 60px;
+        }
+        
+        table {
+            width: 1100px;
+            border-collapse: collapse;
+            margin-bottom: 60px;
+        }
+        
+        td {
+            padding: 30px;
+            vertical-align: top;
+        }
+        
+        td:first-child, td:last-child {
+            width: 200;
+            text-align: center;
+        }
+        
+        td:nth-child(2) {
+            width: 600;
+        }
+        
+        td img {
+            width: 200px;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 25px;
+            display: block;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+            position: relative;
+            z-index: 1;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        td img:hover {
+            transform: translateY(-15px) rotate(2deg);
+            box-shadow: 0 35px 70px rgba(0,0,0,0.25);
+        }
+        
+        .text-content {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 45px;
+            border-radius: 25px;
+            height: 240px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            border: 3px solid transparent;
+            background-clip: padding-box;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .text-content::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #ff9a9e, #fecfef, #fecfef, #ffecd2);
+            border-radius: 27px;
+            z-index: -1;
+        }
+        
+        .text-content h3 {
+            color: #2d3436;
+            font-size: 1.9em;
+            margin-bottom: 20px;
+            font-weight: 600;
+            position: relative;
+        }
+        
+        .text-content p {
+            color: #636e72;
+            line-height: 1.85;
+            font-size: 1.2em;
+            position: relative;
+        }
+        
+        footer {
+            background: linear-gradient(135deg, #2d3436 0%, #000000 100%);
+            color: #dfe6e9;
+            text-align: center;
+            padding: 35px;
+            font-size: 1.15em;
+            position: relative;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00b894, #00cec9);
+        }
